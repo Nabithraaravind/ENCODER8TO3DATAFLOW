@@ -67,27 +67,13 @@ assign b=(din[2]| din[3]| din[6]|din[7]);
 assign c=(din[1]| din[3]| din[5]|din[7]);
 endmodule
 
-
-module EXP10(clk, sin, q);
-input clk;
-input sin;
-output [3:0] q;
-reg [3:0] q;
-always @(posedge clk)
-begin
-q[0] <= sin;
-q[1] <= q[0];
-q[2] <= q[1];
-q[3] <= q[2];
-end
-endmodule
 ```
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 ![image](https://github.com/user-attachments/assets/7179414d-7f4f-4d1a-94e2-06a8663d6b41)
 
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
-![image](https://github.com/user-attachments/assets/16425afa-6c1a-492b-b7bc-48addfdc383a)
+![Uploading Screenshot 2025-05-28 140449.png…]()
 
 **RESULTS**
 
